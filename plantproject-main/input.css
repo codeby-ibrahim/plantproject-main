@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body 
+{
+  @apply bg-green-950 text-white  tracking-wider;
+}
+.nav-link
+{
+  @apply  text-white font-jost tracking-wider ;
+}
+
+.nav-link:hover
+{
+  @apply text-yellow-500;
+}
+
+
+
+
