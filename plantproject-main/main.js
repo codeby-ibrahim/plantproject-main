@@ -20,11 +20,11 @@ navLinks.forEach(link => {
 
 // Swiper initialization
 
-const swiper = new Swiper('.swiper', {
+const swiper = new swiper('.swiper', {
   // Optional parameters
   speed: 400,
   spacebetween: 30,
-  autoplay:{
+  autoplay: {
     delay: 3000,
     disableoninteractino: false,
   },
@@ -33,34 +33,34 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
-   grabCursor: true,
-   breakpoints: {
-   640:{
-    slidesPerView: 1,
+  grabCursor: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
 
-   },
+    },
 
-   700:{
-    slidesPerView: 1,
+    700: {
+      slidesPerView: 1,
 
-   },
+    },
   }
 });
 
 const scrollBtn = document.getElementById("scrollToTopBtn");
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-      scrollBtn.classList.remove("opacity-0", "pointer-events-none");
-      scrollBtn.classList.add("opacity-100");
-    } else {
-      scrollBtn.classList.add("opacity-0", "pointer-events-none");
-      scrollBtn.classList.remove("opacity-100");
-    }
-  });
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollBtn.classList.remove("opacity-0", "pointer-events-none");
+    scrollBtn.classList.add("opacity-100");
+  } else {
+    scrollBtn.classList.add("opacity-0", "pointer-events-none");
+    scrollBtn.classList.remove("opacity-100");
+  }
+});
 
-  scrollBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+scrollBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
